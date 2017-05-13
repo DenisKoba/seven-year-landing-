@@ -1,0 +1,472 @@
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.seven-years-header {
+  width: 100%;
+  display: block;
+  margin: auto;
+  position: relative;
+  height: 100%;
+  background-image: url(../images/seven.png);
+  background-repeat: no-repeat;
+  background-size: 46%;
+  background-position-x: 169px;
+  background-position-y: bottom;
+
+  &__with-content {
+    width: 100%;
+    background: linear-gradient(to right, rgba(233, 225, 233, 1) 0%, rgba(207, 213, 246, 1) 100%);
+
+    &_content {
+      width: 1000px;
+      margin: auto;
+      position: relative;
+      height: 100%;
+      background-image: url(../images/seven.png);
+      background-repeat: no-repeat;
+      background-size: 46%;
+      display: block;
+      background-position-x: 169px;
+      background-position-y: bottom;
+
+      &:before {
+        content: "";
+        width: 500px;
+        display: block;
+        height: 187px;
+        position: absolute;
+        right: 130px;
+        top: -32px;
+        background: linear-gradient(to right, rgba(255, 255, 255, 0) 0%, #b6b6e4 100%);
+        transform: rotate(297deg);
+      }
+
+      &:after {
+        content: "";
+        width: 200px;
+        display: block;
+        height: 241px;
+        position: absolute;
+        right: 102px;
+        top: 298px;
+        background: linear-gradient(to right, rgba(255, 255, 255, 0) 0%, #b6b6e4 100%);
+        overflow: hidden;
+        transform: skewY(-40deg) rotate(130deg);
+      }
+
+      .robot {
+        display: block;
+        height: 510px;
+        width: 445px;
+        position: absolute;
+        background-image: url(../images/robot.png);
+        background-size: cover;
+        background-repeat: no-repeat;
+        left: 300px;
+        top: 100px;
+        z-index: 10;
+        animation: 4s linear infinite;
+        animation-name: move-robot;
+      }
+
+      @keyframes move-robot {
+        0% {
+          top: 100px;
+        }
+        50% {
+          top: 80px;
+        }
+        100% {
+          top: 100px;
+        }
+      }
+
+      .cake {
+        display: block;
+        height: 278px;
+        width: 445px;
+        position: absolute;
+        background-image: url(../images/cake.png);
+        background-size: cover;
+        background-repeat: no-repeat;
+        left: 328px;
+        top: 417px;
+        z-index: 11;
+      }
+
+      .text {
+        width: 400px;
+        display: inline;
+        float: right;
+
+        &__style {
+          font-family: Roboto, sans-serif;
+          font-weight: 200;
+          color: #fff;
+          top: 111px;
+          position: absolute;
+          z-index: 12;
+        }
+
+        &__mk {
+          font-size: 30px;
+          top: 150px;
+        }
+
+        &__turns {
+          font-size: 50px;
+          top: 193px;
+          right: 216px;
+        }
+
+        &__seven {
+          font-size: 150px;
+          top: 135px;
+          right: 153px;
+        }
+
+        &__lets {
+          font-size: 50px;
+          top: 306px;
+          right: 112px;
+        }
+
+        &__best {
+          font-size: 50px;
+          top: 364px;
+          right: 16px;
+        }
+      }
+
+      .pattern {
+        width: 1000px;
+        height: 550px;
+        background-image: url(../images/seven-years-pattern.png);
+        background-repeat: no-repeat;
+        background-size: 100%;
+
+        .circle-orange{
+          width: 5px;
+          height: 5px;
+          border: 2px solid #ff9500;
+          border-radius: 5px;
+          display: block;
+          position: absolute;
+          animation: 20s rot infinite linear;
+        }
+
+        @keyframes rot {
+          from {
+            transform: rotate(0deg)
+            translate(-30px)
+            rotate(0deg);
+          }
+          to {
+            transform: rotate(360deg)
+            translate(-30px)
+            rotate(-360deg);
+          }
+        }
+
+        .circle-gray{
+          width: 7px;
+          height: 7px;
+          background-color: #00caf6;
+          border-radius: 7px;
+          display: block;
+          position: absolute;
+          animation: 35s rot infinite linear;
+        }
+
+        @keyframes rot {
+          from {
+            transform: rotate(0deg)
+            translate(-100px)
+            rotate(0deg);
+          }
+          to {
+            transform: rotate(360deg)
+            translate(-100px)
+            rotate(-360deg);
+          }
+        }
+
+        .triangle-white {
+          width: 0;
+          height: 0;
+          border-style: solid;
+          border-width: 0 10px 17px 10px;
+          border-color: transparent transparent #f6f6f6 transparent;
+          position: absolute;
+          animation: 10s spin infinite linear;
+        }
+
+        @keyframes spin {
+          0% {
+            transform: rotate(0deg);
+            margin-left: 0;
+          }
+
+          50%{
+            margin-left: 50px;
+          }
+
+          100% {
+              transform: rotate(360deg);
+              margin-left: 0;
+            }
+        }
+
+        .square-white{
+          width: 7px;
+          height: 7px;
+          background-color: transparent;
+          border: 3px solid #fff;
+          display: block;
+          position: absolute;
+          animation: 35s spin infinite linear;
+        }
+      }
+    }
+
+  }
+
+  &__mirror{
+    height: 200px;
+    width: 1000px;
+    margin: auto;
+    background-image: url(../images/mirror.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position-y: 36px;
+  }
+}
+
+.seven-years-main-content{
+  width: 100%;
+  display: block;
+
+  &__number-of-users{
+    width: 100%;
+    display: block;
+    margin: 100px 0 100px 0;
+
+    &_descr{
+      width: 1000px;
+      display: block;
+      margin: auto;
+
+      .number-of-users-icon{
+        width: 350px;
+        height: 300px;
+        display: inline-block;
+        background-image: url(../images/users.png);
+        background-repeat: no-repeat;
+        background-size: 84%;
+        background-position: top;
+      }
+
+      .seven-years-section-number{
+        width: 100px;
+        display: inline-block;
+        vertical-align: top;
+        color: #d7deea;
+        font-size: 40px;
+        font-family: Roboto, sans-serif;
+        font-weight: 300;
+      }
+
+      .number-of-users-text{
+        width: 400px;
+        height: 300px;
+        display: inline-block;
+        vertical-align: top;
+        color: #636a7f;
+        font-size: 40px;
+        font-family: Roboto, sans-serif;
+        font-weight: 500;
+        line-height: 55px;
+      }
+
+      .js-year-selected{
+        color: #01a1ff;
+      }
+
+
+    }
+
+    .seven-years-main-content__number-of-users_counter-2010, .seven-years-main-content__number-of-users_counter-2017{
+      width: 1000px;
+      display: block;
+      margin: auto;
+      text-align: center;
+      font-family: Roboto, sans-serif;
+      font-size: 167px;
+      font-weight: 200;
+      color: #636a7f;
+
+      @keyframes slidy {
+        0% { top: 0; }
+        100% { top: -1175px; }
+      }
+
+      @-webkit-keyframes slidy {
+        0% { top: 0; }
+        100% { top: -1320px; }
+      }
+
+      .counter-static-part{
+        margin-right: -30px;
+      }
+
+      .counter-dinamic-part{
+        height: 175px;
+        width: 89px;
+        overflow: hidden;
+        position: relative;
+        margin: 0;
+        display: inline-block;
+        vertical-align: top;
+        margin-right: -25px;
+
+
+        &__figure-one{
+
+          &_figure{
+            height: 100px;
+            position: relative;
+            margin: 0;
+            animation: 1s slidy;
+            -webkit-animation: 1s slidy;
+            -moz-animation: 1s slidy;
+            -o-animation: 1s slidy;
+            text-align: center;
+          }
+        }
+
+        &__figure-two{
+
+          &_figure{
+            height: 100px;
+            position: relative;
+            margin: 0;
+            animation: 2s slidy;
+            -webkit-animation: 2s slidy;
+            -moz-animation: 2s slidy;
+            -o-animation: 2s slidy;
+            text-align: center;
+          }
+        }
+
+        &__figure-three{
+
+          &_figure{
+            height: 100px;
+            position: relative;
+            margin: 0;
+            animation: 3s slidy;
+            -webkit-animation: 3s slidy;
+            -moz-animation: 3s slidy;
+            -o-animation: 3s slidy;
+            text-align: center;
+          }
+        }
+      }
+    }
+  }
+
+  &__features{
+    width: 100%;
+    display: block;
+    background-color: #f5f7fa;
+
+    &_wrapper{
+      width: 1000px;
+      display: block;
+      margin: auto;
+      padding: 100px 0 100px 0;
+
+      .seven-years-featre-descr, .seven-years-feature-icons{
+        width: 450px;
+        display: inline-block;
+        vertical-align: top;
+
+        &__title{
+          font-family: Roboto, sans-serif;
+          font-weight: 200;
+          color: #636a7f;
+          font-size: 50px;
+        }
+
+        &__text{
+          font-family: Roboto, sans-serif;
+          font-weight: 200;
+          color: #636a7f;
+          font-size: 20px;
+          margin: 100px 0 0 40px;
+          display: block;
+          width: 389px;
+          padding: 0 0 0 20px;
+          border-left: 1px solid #d7deea;
+        }
+
+        &__expand-button{
+          font-family: Roboto, sans-serif;
+          font-weight: 400;
+          color: #01a1ff;
+          font-size: 15px;
+          margin: 100px 0 0 0;
+
+          &_cross{
+            width: 30px;
+            height: 30px;
+            display: inline-block;
+            vertical-align: middle;
+            border-radius: 30px;
+            background-color: #01a1ff;
+
+            &:before{
+              content: "";
+              width: 2px;
+              height: 15px;
+              display: block;
+              background: #fff;
+              margin: 7px 14px;
+            }
+
+            &:after{
+              content: "";
+              width: 2px;
+              height: 15px;
+              display: block;
+              background: #fff;
+              margin: -22px 14px;
+              transform: rotate(90deg);
+              transition: 2s;
+            }
+          }
+
+          &_name{
+            margin-left: 20px;
+          }
+        }
+      }
+
+
+    }
+  }
+}
+
+.seven-years-section-number{
+  width: 100px;
+  height: 300px;
+  display: inline-block;
+  vertical-align: top;
+  color: #d7deea;
+  font-size: 40px;
+  font-family: Roboto, sans-serif;
+  font-weight: 300;
+}
