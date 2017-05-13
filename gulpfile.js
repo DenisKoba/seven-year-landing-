@@ -26,7 +26,7 @@ gulp.task('sass', function(){
 gulp.task('watch', function(){
 
     // Перекомпіляція стилів при зміні scss-файлів
-    gulp.watch('/scss/**/*.scss', function() { runSequence('sass')});
+    gulp.watch('/scss/*.scss', function() { runSequence('sass')});
 });
 
 // ---------------- TASKS ––––––––––––
