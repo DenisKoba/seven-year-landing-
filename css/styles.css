@@ -226,19 +226,11 @@
       font-family: Roboto, sans-serif;
       font-size: 167px;
       font-weight: 200;
-      color: #636a7f; }
-
-@keyframes slidy {
-  0% {
-    top: 0; }
-  100% {
-    top: -1175px; } }
-
-@-webkit-keyframes slidy {
-  0% {
-    top: 0; }
-  100% {
-    top: -1320px; } }
+      color: #636a7f;
+      /*      @-webkit-keyframes slidy {
+        0% { top: 0; }
+        100% { top: -1000%; }
+      }*/ }
       .seven-years-main-content__number-of-users .seven-years-main-content__number-of-users_counter-2010 .counter-static-part, .seven-years-main-content__number-of-users .seven-years-main-content__number-of-users_counter-2017 .counter-static-part {
         margin-right: -30px; }
       .seven-years-main-content__number-of-users .seven-years-main-content__number-of-users_counter-2010 .counter-dinamic-part, .seven-years-main-content__number-of-users .seven-years-main-content__number-of-users_counter-2017 .counter-dinamic-part {
@@ -250,33 +242,42 @@
         display: inline-block;
         vertical-align: top;
         margin-right: -25px; }
-        .seven-years-main-content__number-of-users .seven-years-main-content__number-of-users_counter-2010 .counter-dinamic-part__figure-one_figure, .seven-years-main-content__number-of-users .seven-years-main-content__number-of-users_counter-2017 .counter-dinamic-part__figure-one_figure {
-          height: 100px;
-          position: relative;
-          margin: 0;
+        .seven-years-main-content__number-of-users .seven-years-main-content__number-of-users_counter-2010 .counter-dinamic-part__figure-one, .seven-years-main-content__number-of-users .seven-years-main-content__number-of-users_counter-2017 .counter-dinamic-part__figure-one {
           animation: 1s slidy;
           -webkit-animation: 1s slidy;
           -moz-animation: 1s slidy;
-          -o-animation: 1s slidy;
-          text-align: center; }
-        .seven-years-main-content__number-of-users .seven-years-main-content__number-of-users_counter-2010 .counter-dinamic-part__figure-two_figure, .seven-years-main-content__number-of-users .seven-years-main-content__number-of-users_counter-2017 .counter-dinamic-part__figure-two_figure {
-          height: 100px;
-          position: relative;
-          margin: 0;
+          -o-animation: 1s slidy; }
+          .seven-years-main-content__number-of-users .seven-years-main-content__number-of-users_counter-2010 .counter-dinamic-part__figure-one_figure, .seven-years-main-content__number-of-users .seven-years-main-content__number-of-users_counter-2017 .counter-dinamic-part__figure-one_figure {
+            height: 100px;
+            position: relative;
+            margin: 0;
+            text-align: center; }
+        .seven-years-main-content__number-of-users .seven-years-main-content__number-of-users_counter-2010 .counter-dinamic-part__figure-two, .seven-years-main-content__number-of-users .seven-years-main-content__number-of-users_counter-2017 .counter-dinamic-part__figure-two {
           animation: 2s slidy;
           -webkit-animation: 2s slidy;
           -moz-animation: 2s slidy;
-          -o-animation: 2s slidy;
-          text-align: center; }
-        .seven-years-main-content__number-of-users .seven-years-main-content__number-of-users_counter-2010 .counter-dinamic-part__figure-three_figure, .seven-years-main-content__number-of-users .seven-years-main-content__number-of-users_counter-2017 .counter-dinamic-part__figure-three_figure {
-          height: 100px;
-          position: relative;
-          margin: 0;
+          -o-animation: 2s slidy; }
+          .seven-years-main-content__number-of-users .seven-years-main-content__number-of-users_counter-2010 .counter-dinamic-part__figure-two_figure, .seven-years-main-content__number-of-users .seven-years-main-content__number-of-users_counter-2017 .counter-dinamic-part__figure-two_figure {
+            height: 100px;
+            position: relative;
+            margin: 0;
+            text-align: center; }
+        .seven-years-main-content__number-of-users .seven-years-main-content__number-of-users_counter-2010 .counter-dinamic-part__figure-three, .seven-years-main-content__number-of-users .seven-years-main-content__number-of-users_counter-2017 .counter-dinamic-part__figure-three {
           animation: 3s slidy;
           -webkit-animation: 3s slidy;
           -moz-animation: 3s slidy;
-          -o-animation: 3s slidy;
-          text-align: center; }
+          -o-animation: 3s slidy; }
+          .seven-years-main-content__number-of-users .seven-years-main-content__number-of-users_counter-2010 .counter-dinamic-part__figure-three_figure, .seven-years-main-content__number-of-users .seven-years-main-content__number-of-users_counter-2017 .counter-dinamic-part__figure-three_figure {
+            height: 100px;
+            position: relative;
+            margin: 0;
+            text-align: center; }
+
+@keyframes slidy {
+  0% {
+    top: 0; }
+  100% {
+    transform: translateY(-86%); } }
   .seven-years-main-content__features {
     width: 100%;
     display: block;
@@ -286,16 +287,16 @@
       display: block;
       margin: auto;
       padding: 100px 0 100px 0; }
-      .seven-years-main-content__features_wrapper .seven-years-featre-descr, .seven-years-main-content__features_wrapper .seven-years-feature-icons {
+      .seven-years-main-content__features_wrapper .seven-years-featre-descr {
         width: 450px;
         display: inline-block;
         vertical-align: top; }
-        .seven-years-main-content__features_wrapper .seven-years-featre-descr__title, .seven-years-main-content__features_wrapper .seven-years-feature-icons__title {
+        .seven-years-main-content__features_wrapper .seven-years-featre-descr__title {
           font-family: Roboto, sans-serif;
           font-weight: 200;
           color: #636a7f;
           font-size: 50px; }
-        .seven-years-main-content__features_wrapper .seven-years-featre-descr__text, .seven-years-main-content__features_wrapper .seven-years-feature-icons__text {
+        .seven-years-main-content__features_wrapper .seven-years-featre-descr__text {
           font-family: Roboto, sans-serif;
           font-weight: 200;
           color: #636a7f;
@@ -305,27 +306,28 @@
           width: 389px;
           padding: 0 0 0 20px;
           border-left: 1px solid #d7deea; }
-        .seven-years-main-content__features_wrapper .seven-years-featre-descr__expand-button, .seven-years-main-content__features_wrapper .seven-years-feature-icons__expand-button {
+        .seven-years-main-content__features_wrapper .seven-years-featre-descr__expand-button {
           font-family: Roboto, sans-serif;
           font-weight: 400;
           color: #01a1ff;
           font-size: 15px;
           margin: 100px 0 0 0; }
-          .seven-years-main-content__features_wrapper .seven-years-featre-descr__expand-button_cross, .seven-years-main-content__features_wrapper .seven-years-feature-icons__expand-button_cross {
+          .seven-years-main-content__features_wrapper .seven-years-featre-descr__expand-button_cross {
             width: 30px;
             height: 30px;
             display: inline-block;
             vertical-align: middle;
             border-radius: 30px;
-            background-color: #01a1ff; }
-            .seven-years-main-content__features_wrapper .seven-years-featre-descr__expand-button_cross:before, .seven-years-main-content__features_wrapper .seven-years-feature-icons__expand-button_cross:before {
+            background-color: #01a1ff;
+            transition: .6s ease-out; }
+            .seven-years-main-content__features_wrapper .seven-years-featre-descr__expand-button_cross:before {
               content: "";
               width: 2px;
               height: 15px;
               display: block;
               background: #fff;
               margin: 7px 14px; }
-            .seven-years-main-content__features_wrapper .seven-years-featre-descr__expand-button_cross:after, .seven-years-main-content__features_wrapper .seven-years-feature-icons__expand-button_cross:after {
+            .seven-years-main-content__features_wrapper .seven-years-featre-descr__expand-button_cross:after {
               content: "";
               width: 2px;
               height: 15px;
@@ -334,8 +336,129 @@
               margin: -22px 14px;
               transform: rotate(90deg);
               transition: 2s; }
-          .seven-years-main-content__features_wrapper .seven-years-featre-descr__expand-button_name, .seven-years-main-content__features_wrapper .seven-years-feature-icons__expand-button_name {
-            margin-left: 20px; }
+          .seven-years-main-content__features_wrapper .seven-years-featre-descr__expand-button_name {
+            margin-left: 20px;
+            transition: .6s ease-out; }
+      .seven-years-main-content__features_wrapper .seven-years-feature-icons {
+        width: 420px;
+        display: inline-block;
+        vertical-align: top; }
+        .seven-years-main-content__features_wrapper .seven-years-feature-icons .seven-years-feature-icon-gen-styles {
+          background-repeat: no-repeat;
+          background-size: 84%;
+          width: 100px;
+          height: 100px;
+          display: block;
+          margin: 35px 0 0 40px;
+          background-position: 8px 5px;
+          top: 40px; }
+        .seven-years-main-content__features_wrapper .seven-years-feature-icons__content {
+          width: 180px;
+          height: 180px;
+          display: inline-block;
+          vertical-align: top;
+          text-align: center;
+          font-family: Roboto, sans-serif;
+          font-size: 15px;
+          font-weight: 200;
+          color: #3d424d; }
+          .seven-years-main-content__features_wrapper .seven-years-feature-icons__content_text {
+            margin: 15px 0 0 0; }
+        .seven-years-main-content__features_wrapper .seven-years-feature-icons__no-sleep-mode:after {
+          content: "";
+          width: 1px;
+          height: 135px;
+          background-color: #d7deea;
+          display: block;
+          position: absolute;
+          margin-left: 179px;
+          margin-top: 43px; }
+        .seven-years-main-content__features_wrapper .seven-years-feature-icons__no-sleep-mode:before {
+          content: "";
+          width: 1px;
+          height: 135px;
+          background-color: #d7deea;
+          display: block;
+          position: absolute;
+          margin-left: 179px;
+          margin-top: 30px; }
+        .seven-years-main-content__features_wrapper .seven-years-feature-icons__no-sleep-mode_icon {
+          background-image: url(../images/seven-years-no-sleep.png); }
+        .seven-years-main-content__features_wrapper .seven-years-feature-icons__memory-cleaner:after {
+          content: "";
+          width: 1px;
+          height: 135px;
+          background-color: #d7deea;
+          display: block;
+          position: absolute;
+          margin-left: 88px;
+          margin-top: -48px;
+          transform: rotate(90deg); }
+        .seven-years-main-content__features_wrapper .seven-years-feature-icons__memory-cleaner:before {
+          content: "";
+          width: 1px;
+          height: 135px;
+          background-color: #d7deea;
+          display: block;
+          position: absolute;
+          margin-left: -95px;
+          margin-top: 120px;
+          transform: rotate(90deg); }
+        .seven-years-main-content__features_wrapper .seven-years-feature-icons__memory-cleaner_icon {
+          background-image: url(../images/seven-years-memory-cleaner.png); }
+        .seven-years-main-content__features_wrapper .seven-years-feature-icons__track-my-mac_icon {
+          background-image: url(../images/seven-years-tmm.png); }
+        .seven-years-main-content__features_wrapper .seven-years-feature-icons__antivirus-scan_icon {
+          background-image: url(../images/seven-years-scan.png); }
+    .seven-years-main-content__features_expander {
+      width: 1000px;
+      display: block;
+      margin: 0 auto;
+      height: 0;
+      overflow: hidden;
+      transition: .6s ease-out; }
+      .seven-years-main-content__features_expander .seven-years-expander-feature-block {
+        display: block;
+        margin: auto;
+        width: 700px; }
+        .seven-years-main-content__features_expander .seven-years-expander-feature-block__icon {
+          width: 100px;
+          height: 100px;
+          display: inline-block;
+          background-size: 95%;
+          background-repeat: no-repeat;
+          vertical-align: top; }
+        .seven-years-main-content__features_expander .seven-years-expander-feature-block__text {
+          display: inline-block;
+          vertical-align: top;
+          width: 550px;
+          font-size: 20px;
+          line-height: 25px;
+          font-family: Roboto, sans-serif;
+          margin: 10px 0 0 45px; }
+          .seven-years-main-content__features_expander .seven-years-expander-feature-block__text_feature-name {
+            display: block;
+            font-weight: 400; }
+          .seven-years-main-content__features_expander .seven-years-expander-feature-block__text_feature-descr {
+            display: block;
+            font-weight: 200; }
+        .seven-years-main-content__features_expander .seven-years-expander-feature-block .seven-years-expander-no-sleep-icon {
+          background-image: url(../images/seven-years-expander-no-sleep.png); }
+        .seven-years-main-content__features_expander .seven-years-expander-feature-block .seven-years-expander-memory-keeper-icon {
+          background-image: url(../images/seven-years-expander-memory-keeper.png); }
+        .seven-years-main-content__features_expander .seven-years-expander-feature-block .seven-years-expander-tmm-icon {
+          background-image: url(../images/seven-years-expander-tmm.png); }
+        .seven-years-main-content__features_expander .seven-years-expander-feature-block .seven-years-expander-scan-icon {
+          background-image: url(../images/seven-years-expander-scan.png); }
+    .seven-years-main-content__features .activate-features-expander {
+      height: 300px; }
+    .seven-years-main-content__features .js-seven-years-rotate-cross {
+      transform: rotate(45deg);
+      background-color: #636a7f;
+      transition: .6s ease-out; }
+    .seven-years-main-content__features .js-seven-years-change-color-name {
+      color: #636a7f;
+      transition: .6s ease-out; }
 
 .seven-years-section-number {
   width: 100px;
