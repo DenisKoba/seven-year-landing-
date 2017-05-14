@@ -250,45 +250,13 @@
   display: block;
 
   &__number-of-users{
-    width: 100%;
-    display: block;
-    margin: 100px 0 100px 0;
 
     &_descr{
-      width: 1000px;
-      display: block;
-      margin: auto;
 
       .number-of-users-icon{
-        width: 350px;
-        height: 300px;
-        display: inline-block;
         background-image: url(../images/users.png);
-        background-repeat: no-repeat;
         background-size: 84%;
         background-position: top;
-      }
-
-      .seven-years-section-number{
-        width: 100px;
-        display: inline-block;
-        vertical-align: top;
-        color: #d7deea;
-        font-size: 40px;
-        font-family: Roboto, sans-serif;
-        font-weight: 300;
-      }
-
-      .number-of-users-text{
-        width: 400px;
-        height: 300px;
-        display: inline-block;
-        vertical-align: top;
-        color: #636a7f;
-        font-size: 40px;
-        font-family: Roboto, sans-serif;
-        font-weight: 500;
-        line-height: 55px;
       }
 
       .js-year-selected{
@@ -580,9 +548,10 @@
         display: block;
         margin: auto;
         width: 700px;
+        padding: 0 0 50px 0;
 
         &__icon{
-          width: 100px;
+          width: 85px;
           height: 100px;
           display: inline-block;
           background-size: 95%;
@@ -594,7 +563,7 @@
           display: inline-block;
           vertical-align: top;
           width: 550px;
-          font-size: 20px;
+          font-size: 18px;
           line-height: 25px;
           font-family: Roboto, sans-serif;
           margin: 10px 0 0 45px;
@@ -627,7 +596,7 @@
     }
 
     .activate-features-expander{
-      height: 300px;
+      height: 700px;
     }
 
     .js-seven-years-rotate-cross{
@@ -641,15 +610,71 @@
       transition: .6s ease-out;
     }
   }
+
+  &__media-mentions{
+    &_logo{
+      background-image: url(../images/seven-years-mentions-logo.png);
+      width: 1000px;
+      display: block;
+      margin: auto;
+      height: 550px;
+      background-position: center;
+    }
+  }
+
+  &__sections-two-three-ten{
+    width: 100%;
+    display: block;
+    margin: 100px 0 100px 0;
+
+    &_descr {
+      width: 1000px;
+      display: block;
+      margin: auto;
+
+      .sections-two-three-ten-image {
+        width: 350px;
+        height: 300px;
+        display: inline-block;
+        background-repeat: no-repeat;
+
+        .seven-years-media-mentions-number{
+          font-family: Roboto, sans-serif;
+          font-size: 80px;
+          font-weight: 700;
+          position: absolute;
+          float: right;
+          margin: 137px 0 0 115px;
+          color: #636a7f;
+        }
+      }
+
+      .sections-two-three-ten-text {
+        width: 530px;
+        height: 300px;
+        display: inline-block;
+        vertical-align: top;
+        color: #636a7f;
+        font-size: 40px;
+        font-family: Roboto, sans-serif;
+        font-weight: 500;
+        line-height: 55px;
+      }
+    }
+  }
+
+  .sections-two-three-ten-section-number {
+    width: 100px;
+    display: inline-block;
+    vertical-align: top;
+    color: #d7deea;
+    font-size: 40px;
+    font-family: Roboto, sans-serif;
+    font-weight: 300;
+  }
 }
 
-.seven-years-section-number{
-  width: 100px;
-  height: 300px;
-  display: inline-block;
-  vertical-align: top;
-  color: #d7deea;
-  font-size: 40px;
-  font-family: Roboto, sans-serif;
-  font-weight: 300;
-}
+
+
+
+// general styles
