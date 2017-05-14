@@ -48,3 +48,12 @@ $( document ).ready(function() {
         });
     });
 });
+
+
+
+
+    $(".js-seven-years-expand-button").click(function () {
+        $(".js-seven-years-expand-area").toggleClass("activate-features-expander");
+        $(".js-seven-years-expand-button-cross").toggleClass("js-seven-years-rotate-cross");
+        $(".js-seven-years-expand-button-name").text($(".js-seven-years-expand-button-name").text() == 'Learn more' ? 'Close' : 'Learn more').toggleClass("js-seven-years-change-color-name");
+    })

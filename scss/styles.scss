@@ -308,15 +308,10 @@
       font-weight: 200;
       color: #636a7f;
 
-      @keyframes slidy {
+/*      @-webkit-keyframes slidy {
         0% { top: 0; }
-        100% { top: -1175px; }
-      }
-
-      @-webkit-keyframes slidy {
-        0% { top: 0; }
-        100% { top: -1320px; }
-      }
+        100% { top: -1000%; }
+      }*/
 
       .counter-static-part{
         margin-right: -30px;
@@ -334,45 +329,50 @@
 
 
         &__figure-one{
+          animation: 1s slidy;
+          -webkit-animation: 1s slidy;
+          -moz-animation: 1s slidy;
+          -o-animation: 1s slidy;
 
           &_figure{
             height: 100px;
             position: relative;
             margin: 0;
-            animation: 1s slidy;
-            -webkit-animation: 1s slidy;
-            -moz-animation: 1s slidy;
-            -o-animation: 1s slidy;
             text-align: center;
           }
         }
 
         &__figure-two{
+          animation: 2s slidy;
+          -webkit-animation: 2s slidy;
+          -moz-animation: 2s slidy;
+          -o-animation: 2s slidy;
 
           &_figure{
             height: 100px;
             position: relative;
             margin: 0;
-            animation: 2s slidy;
-            -webkit-animation: 2s slidy;
-            -moz-animation: 2s slidy;
-            -o-animation: 2s slidy;
             text-align: center;
           }
         }
 
         &__figure-three{
+          animation: 3s slidy;
+          -webkit-animation: 3s slidy;
+          -moz-animation: 3s slidy;
+          -o-animation: 3s slidy;
 
           &_figure{
             height: 100px;
             position: relative;
             margin: 0;
-            animation: 3s slidy;
-            -webkit-animation: 3s slidy;
-            -moz-animation: 3s slidy;
-            -o-animation: 3s slidy;
             text-align: center;
           }
+        }
+
+        @keyframes slidy {
+          0% { top: 0; }
+          100% { transform: translateY(-86%); }
         }
       }
     }
@@ -389,7 +389,7 @@
       margin: auto;
       padding: 100px 0 100px 0;
 
-      .seven-years-featre-descr, .seven-years-feature-icons{
+      .seven-years-featre-descr{
         width: 450px;
         display: inline-block;
         vertical-align: top;
@@ -420,6 +420,7 @@
           font-size: 15px;
           margin: 100px 0 0 0;
 
+
           &_cross{
             width: 30px;
             height: 30px;
@@ -427,6 +428,7 @@
             vertical-align: middle;
             border-radius: 30px;
             background-color: #01a1ff;
+            transition: .6s ease-out;
 
             &:before{
               content: "";
@@ -451,11 +453,192 @@
 
           &_name{
             margin-left: 20px;
+            transition: .6s ease-out;
           }
         }
       }
 
+      .seven-years-feature-icons{
+        width: 420px;
+        display: inline-block;
+        vertical-align: top;
 
+        .seven-years-feature-icon-gen-styles{
+          background-repeat: no-repeat;
+          background-size: 84%;
+          width: 100px;
+          height: 100px;
+          display: block;
+          margin: 35px 0 0 40px;
+          background-position: 8px 5px;
+          top: 40px;
+        }
+
+        &__content{
+          width: 180px;
+          height: 180px;
+          display: inline-block;
+          vertical-align: top;
+          text-align: center;
+          font-family: Roboto, sans-serif;
+          font-size: 15px;
+          font-weight: 200;
+          color: #3d424d;
+
+          &_text{
+            margin: 15px 0 0 0;
+          }
+        }
+
+        &__no-sleep-mode{
+
+          &:after{
+            content: "";
+            width: 1px;
+            height: 135px;
+            background-color: #d7deea;
+            display: block;
+            position: absolute;
+            margin-left: 179px;
+            margin-top: 43px;
+          }
+
+          &:before{
+            content: "";
+            width: 1px;
+            height: 135px;
+            background-color: #d7deea;
+            display: block;
+            position: absolute;
+            margin-left: 179px;
+            margin-top: 30px;
+          }
+
+          &_icon{
+            background-image: url(../images/seven-years-no-sleep.png);
+          }
+        }
+
+        &__memory-cleaner{
+
+
+          &:after{
+            content: "";
+            width: 1px;
+            height: 135px;
+            background-color: #d7deea;
+            display: block;
+            position: absolute;
+            margin-left: 88px;
+            margin-top: -48px;
+            transform: rotate(90deg);
+          }
+
+          &:before{
+            content: "";
+            width: 1px;
+            height: 135px;
+            background-color: #d7deea;
+            display: block;
+            position: absolute;
+            margin-left: -95px;
+            margin-top: 120px;
+            transform: rotate(90deg);
+          }
+
+          &_icon{
+            background-image: url(../images/seven-years-memory-cleaner.png);
+          }
+        }
+
+        &__track-my-mac{
+
+          &_icon{
+            background-image: url(../images/seven-years-tmm.png);
+          }
+
+        }
+
+        &__antivirus-scan{
+
+          &_icon{
+            background-image: url(../images/seven-years-scan.png);
+          }
+        }
+      }
+    }
+
+    &_expander{
+      width: 1000px;
+      display: block;
+      margin: 0 auto;
+      height: 0;
+      overflow: hidden;
+      transition: .6s ease-out;
+
+      .seven-years-expander-feature-block{
+        display: block;
+        margin: auto;
+        width: 700px;
+
+        &__icon{
+          width: 100px;
+          height: 100px;
+          display: inline-block;
+          background-size: 95%;
+          background-repeat: no-repeat;
+          vertical-align: top;
+        }
+
+        &__text{
+          display: inline-block;
+          vertical-align: top;
+          width: 550px;
+          font-size: 20px;
+          line-height: 25px;
+          font-family: Roboto, sans-serif;
+          margin: 10px 0 0 45px;
+
+          &_feature-name{
+            display: block;
+            font-weight: 400;
+          }
+
+          &_feature-descr{
+            display: block;
+            font-weight: 200;
+          }
+
+        }
+
+        .seven-years-expander-no-sleep-icon{
+          background-image: url(../images/seven-years-expander-no-sleep.png);
+        }
+        .seven-years-expander-memory-keeper-icon{
+          background-image: url(../images/seven-years-expander-memory-keeper.png);
+        }
+        .seven-years-expander-tmm-icon{
+          background-image: url(../images/seven-years-expander-tmm.png);
+        }
+        .seven-years-expander-scan-icon{
+          background-image: url(../images/seven-years-expander-scan.png);
+        }
+      }
+    }
+
+    .activate-features-expander{
+      height: 300px;
+    }
+
+    .js-seven-years-rotate-cross{
+      transform: rotate(45deg);
+      background-color: #636a7f;
+      transition: .6s ease-out;
+    }
+
+    .js-seven-years-change-color-name{
+      color: #636a7f;
+      transition: .6s ease-out;
     }
   }
 }
