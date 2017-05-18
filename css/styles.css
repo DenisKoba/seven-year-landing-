@@ -601,10 +601,9 @@
     display: block;
     background: #ffffff;
     background-image: url(../images/seven-years-charity-background.png);
-    background-size: 170%;
-    background-position-x: center;
-    background-position-y: top;
-    background-repeat: no-repeat; }
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position-x: -406px; }
     .seven-years-main-content__non-profit_wrapper {
       width: 1000px;
       height: 500px;
@@ -731,3 +730,8 @@
               opacity: .9; }
   .seven-years-main-content__no-margin-bottom {
     margin-bottom: 0; }
+
+@media screen and (min-width: 1900px) {
+  /* Specific to this particular image */
+  .seven-years-main-content__non-profit {
+    background-position-x: 0; } }
