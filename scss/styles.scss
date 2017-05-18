@@ -259,8 +259,20 @@
         background-position: top;
       }
 
+      .number-of-users-text{
+
+        &__2010{
+          cursor: pointer;
+        }
+
+        &__2017{
+          cursor: pointer;
+        }
+      }
+
       .js-year-selected{
         color: #01a1ff;
+
       }
 
 
@@ -276,17 +288,12 @@
       font-weight: 200;
       color: #636a7f;
 
-/*      @-webkit-keyframes slidy {
-        0% { top: 0; }
-        100% { top: -1000%; }
-      }*/
-
       .counter-static-part{
         margin-right: -30px;
       }
 
       .counter-dinamic-part{
-        height: 175px;
+        height: 200px;
         width: 89px;
         overflow: hidden;
         position: relative;
@@ -295,12 +302,36 @@
         vertical-align: top;
         margin-right: -25px;
 
+        @keyframes animateFigure {
+          0% { top: 0; }
+          100% { transform: translateY(-85.5%); }
+        }
+
+        @-webkit-keyframes animateFigure {
+          0% { top: 0; }
+          100% { transform: translateY(-85.5%); }
+        }
+
+        &__figure-third{
+          animation: 3s animateFigure;
+          -webkit-animation: 1.6s animateFigure;
+          -moz-animation: 1.6s animateFigure;
+          -o-animation: 1.6s animateFigure;
+
+          &_figure{
+            height: 100px;
+            position: relative;
+            margin: 0;
+            text-align: center;
+          }
+        }
+
 
         &__figure-one{
-          animation: 1s slidy;
-          -webkit-animation: 1s slidy;
-          -moz-animation: 1s slidy;
-          -o-animation: 1s slidy;
+          animation: 1s animateFigure;
+          -webkit-animation: .8s animateFigure;
+          -moz-animation: .8s animateFigure;
+          -o-animation: .8s animateFigure;
 
           &_figure{
             height: 100px;
@@ -310,46 +341,93 @@
           }
         }
 
-        &__figure-two{
-          animation: 2s slidy;
-          -webkit-animation: 2s slidy;
-          -moz-animation: 2s slidy;
-          -o-animation: 2s slidy;
+        &__figure-two {
+          animation: 2s animateFigure;
+          -webkit-animation: 1.2s animateFigure;
+          -moz-animation: 1.2s animateFigure;
+          -o-animation: 1.2s animateFigure;
 
-          &_figure{
+          &_figure {
             height: 100px;
             position: relative;
             margin: 0;
             text-align: center;
           }
-        }
 
-        &__figure-three{
-          animation: 3s slidy;
-          -webkit-animation: 3s slidy;
-          -moz-animation: 3s slidy;
-          -o-animation: 3s slidy;
-
-          &_figure{
-            height: 100px;
-            position: relative;
-            margin: 0;
-            text-align: center;
-          }
-        }
-
-        @keyframes slidy {
-          0% { top: 0; }
-          100% { transform: translateY(-86%); }
         }
       }
     }
   }
 
-  &__features{
+  &__media-mentions{
+    &_logo{
+      background-image: url(../images/seven-years-mentions-logo.png);
+      width: 1000px;
+      display: block;
+      margin: auto;
+      height: 550px;
+      background-position: center;
+    }
+  }
+
+  &__sections-two-three-ten{
     width: 100%;
     display: block;
+    margin: 100px 0 100px 0;
+
+    &_descr {
+      width: 1000px;
+      display: block;
+      margin: auto;
+
+      .sections-two-three-ten-image {
+        width: 350px;
+        height: 300px;
+        display: inline-block;
+        background-repeat: no-repeat;
+
+        .seven-years-media-mentions-number{
+          font-family: Roboto, sans-serif;
+          font-size: 80px;
+          font-weight: 700;
+          position: absolute;
+          float: right;
+          margin: 137px 0 0 115px;
+          color: #636a7f;
+        }
+      }
+    }
+  }
+
+  .sections-two-three-ten-text {
+    width: 530px;
+    height: 300px;
+    display: inline-block;
+    vertical-align: top;
+    color: #636a7f;
+    font-size: 40px;
+    font-family: Roboto, sans-serif;
+    font-weight: 500;
+    line-height: 55px;
+  }
+
+  .sections-two-three-ten-section-number {
+    width: 100px;
+    display: inline-block;
+    vertical-align: top;
+    color: #d7deea;
+    font-size: 50px;
+    font-family: Roboto, sans-serif;
+    font-weight: 200;
+  }
+
+  &__expand-section-features{
     background-color: #f5f7fa;
+  }
+
+  &__expand-section{
+    width: 100%;
+    display: block;
 
     &_wrapper{
       width: 1000px;
@@ -357,7 +435,15 @@
       margin: auto;
       padding: 100px 0 100px 0;
 
-      .seven-years-featre-descr{
+      .seven-years-expand-section-icon{
+        background-image: url(../images/seven-years-design-image.png);
+        display: inline-block;
+        height: 400px;
+        background-repeat: no-repeat;
+        background-size: 100%;
+      }
+
+      .seven-years-expand-section-descr{
         width: 450px;
         display: inline-block;
         vertical-align: top;
@@ -387,7 +473,7 @@
           color: #01a1ff;
           font-size: 15px;
           margin: 100px 0 0 0;
-
+          cursor: pointer;
 
           &_cross{
             width: 30px;
@@ -534,6 +620,12 @@
           }
         }
       }
+
+      .seven-years-expand-section-icon{
+        width: 420px;
+        display: inline-block;
+        vertical-align: top;
+      }
     }
 
     &_expander{
@@ -593,6 +685,93 @@
           background-image: url(../images/seven-years-expander-scan.png);
         }
       }
+
+      .seven-years-slider-button-left{
+        width: 50px;
+        height: 50px;
+        border-radius: 50px;
+        background-color: #01a1ff;
+        margin: 200px 0 0 0;
+        display: inline-block;
+        vertical-align: top;
+
+        &:after{
+          content: "";
+          width: 5px;
+          height: 5px;
+          border-left: 2px solid #fff;
+          border-bottom: 2px solid #fff;
+          display: block;
+          margin: 22px 0 0 22px;
+          transform: rotate(45deg);
+        }
+      }
+
+      .seven-years-slider{
+        display: inline-block;
+        vertical-align: top;
+        width: 870px;
+        height: 500px;
+        margin: 0 10px;
+        padding: 10px;
+        box-sizing: border-box;
+        background-image: linear-gradient(to bottom, #d7deea 0%, #d7deea 100%), linear-gradient(to bottom, #fff 0%, #fff 100%);
+        background-clip: content-box, padding-box;
+        border: 1px solid #f2f2f2;
+
+        .js-seven-years-slide-pager-selected{
+          background-color: #01a1ff;
+        }
+
+        &__slide-style{
+          background-repeat: no-repeat;
+          background-size: 100%;
+          background-position-y: 36px;
+          width: 820px;
+          height: 500px;
+        }
+
+        &__slide-one{
+          background-image: url(../images/seven-years-slide-first-version.png);
+        }
+
+        &__slide-two{
+          background-image: url(../images/seven-years-slide-version-three.png);
+        }
+
+        &__slide-three{
+          background-image: url(../images/seven-years-slide-version-four.png);
+        }
+
+        &__pager{
+          display: inline-block;
+          width: 250px;
+          height: 1px;
+          background-color: #e0e5ee;
+          margin: 50px 0 0 20px;
+        }
+      }
+
+      .seven-years-slider-button-right{
+        width: 50px;
+        height: 50px;
+        border-radius: 50px;
+        background-color: #01a1ff;
+        margin: 215px 0 0 0;
+        display: inline-block;
+        vertical-align: top;
+
+        &:after{
+          content: "";
+          width: 5px;
+          height: 5px;
+          border-right: 2px solid #fff;
+          border-top: 2px solid #fff;
+          display: block;
+          margin: 22px 0 0 22px;
+          transform: rotate(45deg);
+        }
+      }
     }
 
     .activate-features-expander{
@@ -611,66 +790,230 @@
     }
   }
 
-  &__media-mentions{
-    &_logo{
-      background-image: url(../images/seven-years-mentions-logo.png);
-      width: 1000px;
-      display: block;
-      margin: auto;
-      height: 550px;
-      background-position: center;
-    }
-  }
-
-  &__sections-two-three-ten{
+  &__sasha-grey{
     width: 100%;
     display: block;
-    margin: 100px 0 100px 0;
+    background: #01a1ff;
 
-    &_descr {
+    &_wrapper{
       width: 1000px;
       display: block;
       margin: auto;
+      padding: 100px 0 100px 0;
 
-      .sections-two-three-ten-image {
-        width: 350px;
-        height: 300px;
-        display: inline-block;
-        background-repeat: no-repeat;
-
-        .seven-years-media-mentions-number{
-          font-family: Roboto, sans-serif;
-          font-size: 80px;
-          font-weight: 700;
-          position: absolute;
-          float: right;
-          margin: 137px 0 0 115px;
-          color: #636a7f;
-        }
-      }
-
-      .sections-two-three-ten-text {
-        width: 530px;
-        height: 300px;
+      .sasha-grey-section-number{
+        width: 100px;
         display: inline-block;
         vertical-align: top;
-        color: #636a7f;
+        color: #d7deea;
+        font-size: 35px;
+        font-family: Roboto, sans-serif;
+        font-weight: 200;
+        margin: 7px 0 0 149px;
+      }
+
+      .sasha-grey-section-text{
+        width: 550px;
+        height: 160px;
+        display: inline-block;
+        vertical-align: top;
+        color: #ffffff;
         font-size: 40px;
         font-family: Roboto, sans-serif;
         font-weight: 500;
-        line-height: 55px;
+        line-height: 50px;
+      }
+
+      .sasha-grey-section-image{
+        background-size: 95%;
+        background-repeat: no-repeat;
+        vertical-align: top;
+        background-image: url(../images/seven-years-tweet.png);
+        display: block;
+        width: 842px;
+        height: 420px;
+        background-position-x: 15px;
       }
     }
   }
 
-  .sections-two-three-ten-section-number {
-    width: 100px;
-    display: inline-block;
-    vertical-align: top;
-    color: #d7deea;
-    font-size: 40px;
-    font-family: Roboto, sans-serif;
-    font-weight: 300;
+  &__non-profit{
+    width: 100%;
+    display: block;
+    background: #ffffff;
+    background-image: url(../images/pic.png);
+    background-size: 170%;
+    background-position-x: center;
+    background-position-y: top;
+    background-repeat: no-repeat;
+
+    &_wrapper{
+      width: 1000px;
+      height: 500px;
+      display: block;
+      margin: auto;
+      padding: 100px 0 100px 0;
+
+      .non-profit-section-number{
+        width: 60px;
+        display: inline-block;
+        vertical-align: bottom;
+        color: #636A7D;
+        font-size: 35px;
+        font-family: Roboto, sans-serif;
+        font-weight: 200;
+        margin: 0 0 0 406px;
+      }
+
+      .non-profit-section-head{
+        font-family: Roboto, sans-serif;
+        font-weight: 200;
+        color: #fff;
+        font-size: 35px;
+        display: inline-block;
+        vertical-align: bottom;
+      }
+
+      .non-profit-section-text{
+        font-family: Roboto, sans-serif;
+        font-weight: 200;
+        color: #ffffff;
+        font-size: 15px;
+        display: block;
+        width: 400px;
+        padding: 0 0 0 20px;
+        border-left: 1px solid #d7deea;
+        position: absolute;
+        margin: 40px 0 0 475px;
+      }
+    }
+  }
+
+  &__gift-card{
+    width: 100%;
+    display: block;
+
+    &_wrapper{
+      width: 1000px;
+      display: block;
+      margin: auto;
+      padding: 100px 0 100px 0;
+      background-image: url(../images/seven-years-gift.png);
+      background-size: 25%;
+      background-repeat: no-repeat;
+      background-position: 637px 178px;
+
+      .seven-years-gift-card-section-number{
+        width: 100px;
+        display: inline-block;
+        vertical-align: bottom;
+        color: #d7deea;
+        font-size: 50px;
+        font-family: Roboto, sans-serif;
+        font-weight: 200;
+      }
+
+      .seven-years-gift-card-section-header{
+        font-family: Roboto, sans-serif;
+        font-weight: 200;
+        color: #636a7f;
+        font-size: 50px;
+      }
+
+      .seven-years-gift-card-section-text{
+        font-family: Roboto, sans-serif;
+        font-weight: 200;
+        color: #636a7f;
+        font-size: 20px;
+        margin: 100px 0 0 151px;
+        display: block;
+        width: 389px;
+        padding: 0 0 0 20px;
+        border-left: 1px solid #d7deea;
+      }
+
+      .seven-years-gift-card-options{
+        width: 300px;
+        height: 315px;
+        border: 1px solid #F2F2E8;
+        border-radius: 10px;
+        border-top-left-radius: 30px;
+        border-top-right-radius: 30px;
+        display: inline-block;
+        vertical-align: top;
+        margin: 100px 0 0 28px;
+        background-repeat: no-repeat;
+        background-size: 100%;
+        background-position-y: 0px;
+
+
+        &__offer-box{
+          margin: 0;
+
+          &_two-years{
+            background-image: url(../images/seven-years-card-two-years.png);
+          }
+
+          &_year{
+            background-image: url(../images/seven-years-card-year.png);
+          }
+
+          &_month{
+            background-image: url(../images/seven-years-card-month.png);
+          }
+
+          &_image{
+            width: 300px;
+            height: 220px;
+            background-repeat: no-repeat;
+            background-size: 100%;
+            position: absolute;
+            margin: -230px 0 0 0;
+            transition: 0.1s;
+            cursor: pointer;
+
+            &:hover{
+              width: 320px;
+              margin: -230px 0 0 -11px;
+              transition: 0.1s;
+            }
+
+          }
+
+          &_text{
+            font-family: Roboto, sans-serif;
+            font-weight: 200;
+            color: #636a7f;
+            font-size: 17px;
+            display: block;
+            text-align: center;
+            margin: 217px 0 0 0;
+          }
+
+          &_button{
+            width: 250px;
+            height: 35px;
+            border: 0;
+            border-radius: 5px;
+            color: #fff;
+            font-family: Roboto, sans-serif;
+            font-size: 15px;
+            margin: 10px 0 0 25px;
+            background-color: #ff6a3e;
+            outline: none;
+            cursor: pointer;
+
+            &:hover{
+              opacity: .9;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  &__no-margin-bottom{
+    margin-bottom: 0;
   }
 }
 
