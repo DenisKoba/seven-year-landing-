@@ -842,10 +842,10 @@
     display: block;
     background: #ffffff;
     background-image: url(../images/seven-years-charity-background.png);
-    background-size: 170%;
-    background-position-x: center;
-    background-position-y: top;
+    background-size: cover;
     background-repeat: no-repeat;
+    background-position-x: -406px;
+
 
     &_wrapper{
       width: 1000px;
@@ -1017,6 +1017,12 @@
   }
 }
 
+
+@media screen and (min-width: 1900px) { /* Specific to this particular image */
+  .seven-years-main-content__non-profit {
+    background-position-x: 0;
+  }
+}
 
 
 
