@@ -1,6 +1,6 @@
-/**
- * Created by griffin on 5/13/17.
- */
+
+//Animated pattern
+
 $( document ).ready(function() {
 
     var patternContainer = document.querySelector(".js-pattern");
@@ -50,25 +50,17 @@ $( document ).ready(function() {
 });
 
 
-
-
-    $(".js-seven-years-expand-button").click( function () {
-        $this = $(this);
-        $target =  $this.parent().find(".js-seven-years-expand-area");
-        $target.toggleClass("activate-features-expander");
-        /*$(".js-seven-years-expand-button-cross").toggleClass("js-seven-years-rotate-cross");
-        $(".js-seven-years-expand-button-name").text($(".js-seven-years-expand-button-name").text() == 'Learn more' ? 'Close' : 'Learn more').toggleClass("js-seven-years-change-color-name");*/
-    })
-
-/*
-
-var accordionTab = $(".js-seven-years-expand-button");
+var accordionTab = document.querySelectorAll(".js-seven-years-expand-button");
 var buttons = [accordionTab[0], accordionTab[1]];
 
 buttons.forEach(function(item){
     item.addEventListener("click", function(){
-        $(".js-seven-years-expand-area").toggleClass("activate-features-expander");
-        $(".js-seven-years-expand-button-cross").toggleClass("js-seven-years-rotate-cross");
-        $(".js-seven-years-expand-button-name").text($(".js-seven-years-expand-button-name").text() == 'Learn more' ? 'Close' : 'Learn more').toggleClass("js-seven-years-change-color-name");
+        var expandArea = this.nextElementSibling;
+        var buttonCross = this.childNodes[1];
+        var buttonText = this.childNodes[3];
+        expandArea.classList.toggle("activate-features-expander");
+        buttonCross.classList.toggle("js-seven-years-rotate-cross");
+        buttonText.classList.toggle("js-seven-years-change-color-name");
     });
-});*/
+});
+
