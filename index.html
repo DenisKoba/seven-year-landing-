@@ -24,7 +24,9 @@
             <div class="pattern js-pattern"></div>
         </div>
     </section>
-    <section class="seven-years-header__mirror"></section>
+    <section class="seven-years-header__mirror">
+        <span class="seven-years-header__scroll"></span>
+    </section>
 </header>
 <article class="seven-years-main-content">
     <section class="seven-years-main-content__number-of-users seven-years-main-content__sections-two-three-ten">
@@ -114,13 +116,7 @@
             <div class="sections-two-three-ten-section-number">02</div>
             <div class="seven-years-expand-section-descr">
                 <span class="seven-years-expand-section-descr__title">Features</span>
-                <span class="seven-years-expand-section-descr__text">You may not remember, but MacKeeper includes 17 features.
-Here are the latest that we have added.
-</span>
-                <div class="seven-years-expand-section-descr__expand-button js-seven-years-expand-button">
-                    <span class="seven-years-expand-section-descr__expand-button_cross js-seven-years-expand-button-cross"></span>
-                    <span class="seven-years-expand-section-descr__expand-button_name js-seven-years-expand-button-name">Learn more</span>
-                </div>
+                <span class="seven-years-expand-section-descr__text seven-years-gen-text-descr">You may not remember, but MacKeeper includes 17 features. Here are the latest that we have added.</span>
             </div>
             <div class="seven-years-feature-icons">
                 <div class="seven-years-feature-icons__content seven-years-feature-icons__no-sleep-mode">
@@ -141,34 +137,40 @@ Here are the latest that we have added.
                 </div>
             </div>
         </div>
-        <div class="seven-years-main-content__expand-section_expander js-seven-years-expand-area">
-            <div class="seven-years-expander-feature-block">
-                <span class="seven-years-expander-feature-block__icon seven-years-expander-no-sleep-icon"></span>
-                <span class="seven-years-expander-feature-block__text">
-                    <span class="seven-years-expander-feature-block__text_feature-name">No-Sleep Mode</span>
-                    <span class="seven-years-expander-feature-block__text_feature-descr">No-Sleep Mode is a two-click solution to prevent the computer from automatic sleep during the most important moments.</span>
-                </span>
+        <div class="seven-years-expander-wrapper">
+            <div class="seven-years-expand-button js-seven-years-expand-button">
+                <span class="seven-years-expand-button__cross js-seven-years-expand-button-cross"></span>
+                <span class="seven-years-expand-button__name js-seven-years-expand-button-name">Learn more</span>
             </div>
-            <div class="seven-years-expander-feature-block">
-                <span class="seven-years-expander-feature-block__icon seven-years-expander-memory-keeper-icon"></span>
-                <span class="seven-years-expander-feature-block__text">
-                    <span class="seven-years-expander-feature-block__text_feature-name">Memory Cleaner</span>
-                    <span class="seven-years-expander-feature-block__text_feature-descr">Automatically optimizes and monitors your Mac's RAM memory while you are performing your daily tasks. Best solution after you have finished using intensive apps or games.</span>
-                </span>
-            </div>
-            <div class="seven-years-expander-feature-block">
-                <span class="seven-years-expander-feature-block__icon seven-years-expander-tmm-icon"></span>
-                <span class="seven-years-expander-feature-block__text">
-                    <span class="seven-years-expander-feature-block__text_feature-name">Track My Mac</span>
-                    <span class="seven-years-expander-feature-block__text_feature-descr">Track My Mac is a fast and easy way to lock, unlock and see your Mac's current location right from your iPhone. The app allows you to watch and control the screen status of your Apple Computer from any place of the world.</span>
-                </span>
-            </div>
-            <div class="seven-years-expander-feature-block">
-                <span class="seven-years-expander-feature-block__icon seven-years-expander-scan-icon"></span>
-                <span class="seven-years-expander-feature-block__text">
-                    <span class="seven-years-expander-feature-block__text_feature-name">Antivirus Scan</span>
-                    <span class="seven-years-expander-feature-block__text_feature-descr">Protect your Mac from phishing scams, malware, spyware, adware, viruses and identity theft while you're using the Internet.</span>
-                </span>
+            <div class="seven-years-expander-wrapper__expander js-seven-years-expand-area">
+                <div class="seven-years-expander-wrapper__expander_feature-block">
+                    <span class="seven-years-expander-icon seven-years-expander-no-sleep-icon"></span>
+                    <span class="seven-years-expander-text">
+                        <span class="seven-years-expander-text__feature-name">No-Sleep Mode</span>
+                        <span class="seven-years-expander-text__feature-descr">No-Sleep Mode is a two-click solution to prevent the computer from automatic sleep during the most important moments.</span>
+                    </span>
+                </div>
+                <div class="seven-years-expander-wrapper__expander_feature-block">
+                    <span class="seven-years-expander-icon seven-years-expander-memory-keeper-icon"></span>
+                    <span class="seven-years-expander-text">
+                        <span class="seven-years-expander-text__feature-name">Memory Cleaner</span>
+                        <span class="seven-years-expander-text__feature-descr">Automatically optimizes and monitors your Mac's RAM memory while you are performing your daily tasks. Best solution after you have finished using intensive apps or games.</span>
+                    </span>
+                </div>
+                <div class="seven-years-expander-wrapper__expander_feature-block">
+                    <span class="seven-years-expander-icon seven-years-expander-tmm-icon"></span>
+                    <span class="seven-years-expander-text">
+                        <span class="seven-years-expander-text__feature-name">Track My Mac</span>
+                        <span class="seven-years-expander-text__feature-descr">Track My Mac is a fast and easy way to lock, unlock and see your Mac's current location right from your iPhone. The app allows you to watch and control the screen status of your Apple Computer from any place of the world.</span>
+                    </span>
+                </div>
+                <div class="seven-years-expander-wrapper__expander_feature-block">
+                    <span class="seven-years-expander-icon seven-years-expander-scan-icon"></span>
+                    <span class="seven-years-expander-text">
+                        <span class="seven-years-expander-text__feature-name">Antivirus Scan</span>
+                        <span class="seven-years-expander-text__feature-descr">Protect your Mac from phishing scams, malware, spyware, adware, viruses and identity theft while you're using the Internet.</span>
+                    </span>
+                </div>
             </div>
         </div>
     </section>
@@ -182,48 +184,55 @@ Here are the latest that we have added.
         <div class="seven-years-main-content__media-mentions_logo"></div>
     </section>
     <section class="seven-years-main-content__expand-section">
-        <div class="seven-years-main-content__expand-section_wrapper">
+        <div class="seven-years-main-content__expand-section_wrapper seven-years-main-content__expand-section_no-padding">
             <div class="sections-two-three-ten-section-number">04</div>
             <div class="seven-years-expand-section-descr">
                 <span class="seven-years-expand-section-descr__title">Design</span>
-                <span class="seven-years-expand-section-descr__text">We can't stop improving MacKeeper! Did you know that over the last 7 years, MacKeeper interface has been changed more than 10 times? And we are still striving to improve it for your best experience.
-</span>
-                <div class="seven-years-expand-section-descr__expand-button js-seven-years-expand-button">
-                    <span class="seven-years-expand-section-descr__expand-button_cross js-seven-years-expand-button-cross"></span>
-                    <span class="seven-years-expand-section-descr__expand-button_name js-seven-years-expand-button-name">Learn more</span>
-                </div>
+                <span class="seven-years-expand-section-descr__text seven-years-gen-text-descr">We can't stop improving MacKeeper! Did you know that over the last 7 years, MacKeeper interface has been changed more than 10 times? And we are still striving to improve it for your best experience.</span>
             </div>
             <div class="seven-years-expand-section-icon"></div>
         </div>
-        <div class="seven-years-main-content__expand-section_expander js-seven-years-expand-area">
-            <span class="seven-years-slider-button-left"></span>
-            <div class="seven-years-slider">
-                <div class="seven-years-slider__slide-one seven-years-slider__slide-style js-seven-years-slide" data-id="1"></div>
-                <div class="seven-years-slider__slide-two seven-years-slider__slide-style js-seven-years-slide" data-id="2"></div>
-                <div class="seven-years-slider__slide-three seven-years-slider__slide-style js-seven-years-slide" data-id="3"></div>
-                <i class="seven-years-slider__pager js-seven-years-slide-pager" data-id="1"></i>
-                <i class="seven-years-slider__pager js-seven-years-slide-pager" data-id="2"></i>
-                <i class="seven-years-slider__pager js-seven-years-slide-pager" data-id="3"></i>
+        <div class="seven-years-expander-wrapper">
+            <div class="seven-years-expand-button js-seven-years-expand-button">
+                <span class="seven-years-expand-button__cross js-seven-years-expand-button-cross"></span>
+                <span class="seven-years-expand-button__name js-seven-years-expand-button-name">Learn more</span>
             </div>
-            <span class="seven-years-slider-button-right"></span>
+            <div class="seven-years-expander-wrapper__expander js-seven-years-expand-area">
+                <div class="seven-years-expander-wrapper__expander_slider js-seven-years-expand-area">
+                    <span class="seven-years-slider-button-left" id="js-seven-years-left-button"></span>
+                    <div class="seven-years-slider">
+                        <div class="seven-years-slider__slide-one seven-years-slider__slide-style js-seven-years-slide" data-id="1"></div>
+                        <div class="seven-years-slider__slide-two seven-years-slider__slide-style js-seven-years-slide" data-id="2"></div>
+                        <div class="seven-years-slider__slide-three seven-years-slider__slide-style js-seven-years-slide" data-id="3"></div>
+                        <i class="seven-years-slider__pager js-seven-years-slide-pager" data-id="1"></i>
+                        <i class="seven-years-slider__pager js-seven-years-slide-pager" data-id="2"></i>
+                        <i class="seven-years-slider__pager js-seven-years-slide-pager" data-id="3"></i>
+                    </div>
+                    <span class="seven-years-slider-button-right" id="js-seven-years-right-button"></span>
+                </div>
+            </div>
         </div>
     </section>
     <section class="seven-years-main-content__sasha-grey">
         <div class="seven-years-main-content__sasha-grey_wrapper">
             <span class="sasha-grey-section-number">05</span>
-            <span class="sasha-grey-section-text">In 2011 Sasha Grey said that
-she loves MacKeeper
-</span>
+            <span class="sasha-grey-section-text">In 2011 Sasha Grey said that she loves MacKeeper</span>
             <a href="#"><span class="sasha-grey-section-image"></span></a>
+            <span class="sasha-grey-section-hearts">
+                <i class="sasha-grey-section-hearts__one sasha-grey-section-hearts__style"></i>
+                <i class="sasha-grey-section-hearts__two sasha-grey-section-hearts__style"></i>
+                <i class="sasha-grey-section-hearts__three sasha-grey-section-hearts__style"></i>
+                <i class="sasha-grey-section-hearts__four sasha-grey-section-hearts__style"></i>
+            </span>
         </div>
     </section>
     <section class="seven-years-main-content__non-profit">
         <div class="seven-years-main-content__non-profit_wrapper">
             <span class="non-profit-section-number">06</span>
             <span class="non-profit-section-head">Non-Profit Activity</span>
-            <span class="non-profit-section-text">When we started our partnership with American Foundation for Children With AIDs back in 2016, we knew that giving back was important for making difference in the world. With your help, we have supported 5 projects that allow Kenyan kids to get affordable sanitary facilities and quality infrastructure for safe education.
+            <span class="non-profit-section-text seven-years-gen-text-descr">When we started our partnership with American Foundation for Children With AIDs back in 2016, we knew that giving back was important for making difference in the world. With your help, we have supported 5 projects that allow Kenyan kids to get affordable sanitary facilities and quality infrastructure for safe education.
 
-<br><br>This summer we are joining the AFCA in Kenya. Thanks to our charity partner AFCA, we are able to help build facilities for local Kenyan kids and show you how your contribution helps to make this world better.
+This summer we are joining the AFCA in Kenya. Thanks to our charity partner AFCA, we are able to help build facilities for local Kenyan kids and show you how your contribution helps to make this world better.
 
 </span>
         </div>
@@ -232,41 +241,155 @@ she loves MacKeeper
         <div class="seven-years-main-content__gift-card_wrapper">
             <span class="seven-years-gift-card-section-number">07</span>
             <span class="seven-years-gift-card-section-header">We celebrate - you get gifts!</span>
-            <span class="seven-years-gift-card-section-text">We want everyone to be happy on our birthday. Grab our hottest users' choice - MacKeeper Premium - and get your gift!</span>
-                <div class="seven-years-gift-card-options">
-                    <div class="seven-years-gift-card-options__offer-box">
-                        <a href="#"><div class="seven-years-gift-card-options__offer-box_image seven-years-gift-card-options__offer-box_two-years"></div></a>
-                        <span class="seven-years-gift-card-options__offer-box_text">2-year MacKeeper Care + Gift</span>
-                        <a href="#"><button class="seven-years-gift-card-options__offer-box_button">Grab It Now</button></a>
-                    </div>
+            <span class="seven-years-gift-card-section-text seven-years-gen-text-descr">We want everyone to be happy on our birthday. Grab our hottest users' choice - MacKeeper Premium - and get your gift!</span>
+            <div class="seven-years-gift-card-options">
+                <div class="seven-years-gift-card-options__offer-box">
+                    <a href="#"><div class="seven-years-gift-card-options__offer-box_image seven-years-gift-card-options__offer-box_two-years"></div></a>
+                    <span class="seven-years-gift-card-options__offer-box_text">2-year MacKeeper Care + Gift</span>
+                    <a href="#"><button class="seven-years-gift-card-options__offer-box_button">Grab It Now</button></a>
                 </div>
-                <div class="seven-years-gift-card-options">
-                    <div class="seven-years-gift-card-options__offer-box">
-                        <a href="#"><div class="seven-years-gift-card-options__offer-box_image seven-years-gift-card-options__offer-box_year"></div></a>
-                        <span class="seven-years-gift-card-options__offer-box_text">2-year MacKeeper Care + Gift</span>
-                        <a href="#"><button class="seven-years-gift-card-options__offer-box_button">Grab It Now</button></a>
-                    </div>
+            </div>
+            <div class="seven-years-gift-card-options">
+                <div class="seven-years-gift-card-options__offer-box">
+                    <a href="#"><div class="seven-years-gift-card-options__offer-box_image seven-years-gift-card-options__offer-box_year"></div></a>
+                    <span class="seven-years-gift-card-options__offer-box_text">2-year MacKeeper Care + Gift</span>
+                    <a href="#"><button class="seven-years-gift-card-options__offer-box_button">Grab It Now</button></a>
                 </div>
-                <div class="seven-years-gift-card-options">
-                    <div class="seven-years-gift-card-options__offer-box">
-                        <a href="#"><div class="seven-years-gift-card-options__offer-box_image seven-years-gift-card-options__offer-box_month"></div></a>
-                        <span class="seven-years-gift-card-options__offer-box_text">2-year MacKeeper Care + Gift</span>
-                        <a href="#"><button class="seven-years-gift-card-options__offer-box_button">Grab It Now</button></a>
-                    </div>
+            </div>
+            <div class="seven-years-gift-card-options">
+                <div class="seven-years-gift-card-options__offer-box">
+                    <a href="#"><div class="seven-years-gift-card-options__offer-box_image seven-years-gift-card-options__offer-box_month"></div></a>
+                    <span class="seven-years-gift-card-options__offer-box_text">2-year MacKeeper Care + Gift</span>
+                    <a href="#"><button class="seven-years-gift-card-options__offer-box_button">Grab It Now</button></a>
                 </div>
+            </div>
         </div>
     </section>
     <section class="seven-years-main-content__say-hello">
         <div class="seven-years-main-content__say-hello_wrapper">
-            <span class="say-hello-section-descr">The number of support tickets we have handled in 7 years</span>
-            <span class="say-hello-section-number">XXX,XXX</span>
-            <span class="say-hello-section-descr">Say Hello to Andew</span>
-            <a href="#"><button class="say-hello-section-button">Say Hello</button></a>
+            <span class="say-hello-section-number">08</span>
+            <div class="say-hello-section-descr">
+                <span class="say-hello-section-descr__text">The number of support tickets we have handled in 7 years</span>
+                <span class="say-hello-section-descr__figure">XXX,XXX</span>
+                <span class="say-hello-section-descr__text">Say Hello to Andew</span>
+                <a href="#"><button class="say-hello-section-descr__button seven-years-section-button">Say Hello</button></a>
+            </div>
+            <i class="say-hello-tickets-one say-hello-tickets"></i>
+            <i class="say-hello-tickets-two say-hello-tickets"></i>
+            <i class="say-hello-tickets-three say-hello-tickets"></i>
         </div>
     </section>
-
+    <section class="seven-years-main-content__mk-security">
+        <div class="seven-years-main-content__mk-security_wrapper">
+            <span class="seven-years-mk-security-section-number">09</span>
+            <span class="seven-years-mk-security-section-header">MacKeeper Security <br>Research Center</span>
+            <span class="seven-years-mk-security-section-text seven-years-gen-text-descr">Here is the number of user accounts worldwide that are protected by MacKeeper Security Research Center</span>
+            <span class="seven-years-mk-security-section-figure js-animated-figure">1,000,000,000</span>
+        </div>
+    </section>
+    <section class="seven-years-main-content__duplicates">
+        <div class="seven-years-main-content__duplicates_wrapper">
+            <span class="duplicates-section-image"></span>
+            <span class="duplicates-section-number">08</span>
+            <span class="duplicates-section-descr">Here is how many Macs we have cleaned from duplicates over the last 7 years</span>
+            <div class="duplicates-section-dinamic-figure js-seven-years-dinamic-figure">
+                <span class="duplicates-section-dinamic-figure__static-part">1,</span>
+                <span class="duplicates-section-dinamic-figure__dinamic-part">
+                    <div class="duplicates-section-dinamic-figure__dinamic-part_figure-one">
+                        <span class="dinamic-counter-figure">2</span>
+                        <span class="dinamic-counter-figure">1</span>
+                        <span class="dinamic-counter-figure">6</span>
+                        <span class="dinamic-counter-figure">5</span>
+                        <span class="dinamic-counter-figure">4</span>
+                        <span class="dinamic-counter-figure">3</span>
+                        <span class="dinamic-counter-figure">2</span>
+                    </div>
+                </span>
+                <span class="duplicates-section-dinamic-figure__dinamic-part">
+                    <div class="duplicates-section-dinamic-figure__dinamic-part_figure-two">
+                        <span class="dinamic-counter-figure">6</span>
+                        <span class="dinamic-counter-figure">1</span>
+                        <span class="dinamic-counter-figure">2</span>
+                        <span class="dinamic-counter-figure">3</span>
+                        <span class="dinamic-counter-figure">4</span>
+                        <span class="dinamic-counter-figure">5</span>
+                        <span class="dinamic-counter-figure">6</span>
+                    </div>
+                </span>
+                <span class="duplicates-section-dinamic-figure__dinamic-part duplicates-section-dinamic-width">
+                    <div class="duplicates-section-dinamic-figure__dinamic-part_figure-three">
+                        <span class="dinamic-counter-figure">1</span>
+                        <span class="dinamic-counter-figure">6</span>
+                        <span class="dinamic-counter-figure">5</span>
+                        <span class="dinamic-counter-figure">4</span>
+                        <span class="dinamic-counter-figure">3</span>
+                        <span class="dinamic-counter-figure">2</span>
+                        <span class="dinamic-counter-figure">1</span>
+                        <span class="dinamic-counter-figure dinamic-counter-figure-comma">,</span>
+                    </div>
+                </span>
+                <span class="duplicates-section-dinamic-figure__dinamic-part">
+                    <div class="duplicates-section-dinamic-figure__dinamic-part_figure-four">
+                        <span class="dinamic-counter-figure">0</span>
+                        <span class="dinamic-counter-figure">5</span>
+                        <span class="dinamic-counter-figure">4</span>
+                        <span class="dinamic-counter-figure">3</span>
+                        <span class="dinamic-counter-figure">2</span>
+                        <span class="dinamic-counter-figure">1</span>
+                        <span class="dinamic-counter-figure">0</span>
+                    </div>
+                </span>
+                <span class="duplicates-section-dinamic-figure__dinamic-part">
+                    <div class="duplicates-section-dinamic-figure__dinamic-part_figure-five">
+                        <span class="dinamic-counter-figure">0</span>
+                        <span class="dinamic-counter-figure">5</span>
+                        <span class="dinamic-counter-figure">4</span>
+                        <span class="dinamic-counter-figure">3</span>
+                        <span class="dinamic-counter-figure">2</span>
+                        <span class="dinamic-counter-figure">1</span>
+                        <span class="dinamic-counter-figure">0</span>
+                    </div>
+                </span>
+                <span class="duplicates-section-dinamic-figure__dinamic-part">
+                    <div class="duplicates-section-dinamic-figure__dinamic-part_figure-six">
+                        <span class="dinamic-counter-figure">0</span>
+                        <span class="dinamic-counter-figure">5</span>
+                        <span class="dinamic-counter-figure">4</span>
+                        <span class="dinamic-counter-figure">3</span>
+                        <span class="dinamic-counter-figure">2</span>
+                        <span class="dinamic-counter-figure">1</span>
+                        <span class="dinamic-counter-figure">0</span>
+                    </div>
+                </span>
+            </div>
+            <a href="#"><button class="duplicates-section-button seven-years-section-button">This figure deserves sharing</button></a>
+        </div>
+    </section>
+    <section class="seven-years-main-content__team">
+        <div class="seven-years-main-content__team_wrapper">
+            <span class="seven-years-tean-section-number">09</span>
+            <span class="seven-years-team-section-header">We are just 7 years old, and we continue to grow. Thank you for staying with us!
+</span>
+            <div class="team-section-container">
+                <div class="team-section-container__comparison" id="team-section-container__comparison">
+                    <figure class="team-section-container__comparison_wrapper">
+                        <div class="team-section-handle" id="team-section-handle"></div>
+                        <div class="team-section-divisor" id="team-section-divisor"></div>
+                    </figure>
+                </div>
+                <input type="range" min="0" max="100" value="50" class="team-section-input" id="team-section-input" oninput="moveDivisor()">
+            </div>
+        </div>
+    </section>
 </article>
-<footer></footer>
+<footer class="seven-years-footer">
+    <span class="seven-years-footer__text">Thank you, follow our journey </span>
+    <div class="seven-years-footer__smm">
+        <a href="#"><span class="seven-years-footer__smm_fb seven-years-footer__smm_style"></span></a>
+        <a href="#"><span class="seven-years-footer__smm_g-plus seven-years-footer__smm_style"></span></a>
+        <a href="#"><span class="seven-years-footer__smm_twitter seven-years-footer__smm_style"></span></a>
+    </div>
+</footer>
 
 
 
